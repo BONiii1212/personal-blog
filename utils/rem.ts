@@ -1,20 +1,27 @@
-class Rem{
-    public isHorizontalScreen = function(){
-        // @ts-ignore
-        const orientation = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
-        const value = window.orientation
-        if(orientation){
-            return orientation === 'landscape-primary' || orientation === 'landscape-secondary'
-        }else if(value){
-            return value === 90 || value === -90
-        }else{
-            return window.innerWidth > window.innerHeight
+const Rem = () => {
+    const refreshRem = function(){
+        let p = window.innerWidth
+        let fontSize = (100 * p) / 1080 >= 144 ? 144 : (100 * p) / 1080
+        document.documentElement.style.fontSize = fontSize + 'px'
+    }
+    // 首次加载的时候刷新一遍fontSize
+    refreshRem()
+    let timeout : any
+    window.addEventListener(
+        'resize',
+        function () {
+            clearTimeout(timeout)
+            timeout = setTimeout(refreshRem, 300)
         }
-    }
-    public resize = function(){
-
-    }
-
+    )
+    window.addEventListener(
+        'pageshow',
+        function(p) {
+            if(p.persisted) {
+                clearTimeout(timeout)
+                timeout = setTimeout(refreshRem, 300)
+            }
+        }
+    )
 }
-const rem = new Rem()
-export default rem
+export default Rem

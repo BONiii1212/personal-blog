@@ -1,5 +1,7 @@
-import rem from "./rem";
+import Rem from "./rem";
+import isLandscape from "./isLandscape";
 
 export  {
-    rem
+    Rem,
+    isLandscape
 }
