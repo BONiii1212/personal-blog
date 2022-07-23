@@ -6,6 +6,7 @@ import Author from '../component/Author'
 const Home: NextPage = () => {
   return (
     <div>
+      <title>漏杨波的个人博客</title>
       <Row gutter={24} justify='start'>
         <Col xs={0} sm={0} md={0} lg={0} xl={0} xxl={6}>
         </Col>

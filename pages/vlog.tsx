@@ -7,6 +7,7 @@ import VlogList from '../component/VlogList'
 const Vlog: NextPage = () => {
   return (
     <div>
+      <title>视频</title>
       <Row gutter={24} justify='start'>
         <Col xs={0} sm={0} md={0} lg={0} xl={0} xxl={6}>
         </Col>
