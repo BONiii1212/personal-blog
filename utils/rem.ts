@@ -1,7 +1,12 @@
 const Rem = () => {
     const refreshRem = function(){
         let p = window.innerWidth
-        let fontSize = (100 * p) / 1080 >= 144 ? 144 : (100 * p) / 1080
+        let fontSize
+        if(p < 768){
+            fontSize = 14 / 768 * p
+        }else{
+            fontSize = 18
+        }
         document.documentElement.style.fontSize = fontSize + 'px'
     }
     // 首次加载的时候刷新一遍fontSize

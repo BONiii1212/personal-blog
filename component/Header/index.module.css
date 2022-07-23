@@ -1,7 +1,19 @@
-.main {
-    width: 200px;
-    height: 200px;
+.head {
+    margin: 1.3rem 0 1rem 0;
+    width: 36rem;
+    height: 3rem;
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
 }
-.bgc {
-    background-color: antiquewhite;
+.item {
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.item span {
+    color: #9ca3af;
+}
+.item a {
+    color: #374151;
 }
