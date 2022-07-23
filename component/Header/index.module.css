@@ -1,13 +1,13 @@
 .head {
-    margin: 1.3rem 0 1rem 0;
-    width: 36rem;
-    height: 3rem;
+    margin: 1.5rem 0 1rem 0;
+    width: 40rem;
+    height: 3.5rem;
     display: flex;
     border-bottom: 1px solid #e5e7eb;
 }
 .item {
     margin-right: 0.75rem;
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 2rem;
     font-weight: 700;
 }

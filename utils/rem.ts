@@ -3,9 +3,9 @@ const Rem = () => {
         let p = window.innerWidth
         let fontSize
         if(p < 768){
-            fontSize = 14 / 768 * p
+            fontSize = 12 / 768 * p
         }else{
-            fontSize = 18
+            fontSize = 16
         }
         document.documentElement.style.fontSize = fontSize + 'px'
     }
