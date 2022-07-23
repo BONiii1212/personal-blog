@@ -1,0 +1,65 @@
+.container {
+    width: 40rem;
+    padding: 5rem 0;
+}
+.container h1 {
+    color: #111827;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1.11111;
+    margin-bottom: 0.88888;
+}
+.pic{
+    margin: 1.25rem 0;
+    position: relative;
+}
+.bg {
+    margin: 2rem 0;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    vertical-align: middle;
+}
+.author {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+}
+.content p {
+    margin: 1.25rem 0;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.container a {
+    color: #0074de;
+    margin: 0 0.1rem;
+    position: relative;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.table {
+    font-size: .875rem;
+    line-height: 1.7142857;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    table-layout: auto;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    border-color: inherit;
+    text-indent: 0;
+}
+.table th {
+    padding-left: 0;
+    font-size: 600;
+    padding-bottom: 0.5714286em;
+    padding-right: 0.5714286em;
+    vertical-align: bottom;
+}
+.table tbody tr {
+    border-top: 1px solid #e5e7eb;
+}
+

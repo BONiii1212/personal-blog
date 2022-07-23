@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from './index.module.css'
+import { navList } from '../../static/constant'
 
 // @ts-ignore
 const Header: NextPage = ({id}) => {
-    const navList = [{id:0, tag:'博客', href:'/posts'}, {id:1, tag:'视频', href:'/vlog'}, {id:2, tag:'推荐', href:'/recommend'}, {id:3, tag:'关于', href:'/'}, {id:4, tag:'RSS', href:'/'}]
     
     return (
         <div className={styles.head}>
