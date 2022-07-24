@@ -2,8 +2,11 @@ import type { NextPage } from 'next'
 import Header from '../component/Header'
 import { Row, Col } from 'antd'
 import Author from '../component/Author'
+import { http } from '../utils'
+import servicePath from '../config/appUrl'
+import Article from '../component/Article'
 
-const Home: NextPage = () => {
+const Home: NextPage = (props : any) => {
   return (
     <div>
       <title>漏杨波的个人博客</title>
@@ -13,6 +16,8 @@ const Home: NextPage = () => {
         <Col className='main' xs={24} sm={24} md={24} lg={24} xl={16} xxl={12}>
           {/* @ts-ignore */}
           <Header id={3}/>
+          {/* @ts-ignore */}
+          <Article article={props.article} isMultiplexing={true}/>
         </Col>
         <Col className='right' xs={0} sm={0} md={0} lg={0} xl={8} xxl={6}>
           <Author/>
@@ -20,6 +25,13 @@ const Home: NextPage = () => {
       </Row>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const res = await http(servicePath.getArticleById + 1)
+  return {
+    props: {article: res}
+  }
 }
 
 export default Home

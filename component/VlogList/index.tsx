@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import { Avatar } from 'antd'
-import Link from 'next/link'
 import styles from './index.module.css'
 import { imgUrl, videos } from '../../static/constant'
 
