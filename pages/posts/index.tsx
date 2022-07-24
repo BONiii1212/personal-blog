@@ -5,7 +5,7 @@ import Author from '../../component/Author'
 import ArticleList from '../../component/ArticleList'
 import { http } from '../../utils'
 import servicePath from '../../config/appUrl'
-import { propsType } from '../../static/ts-type'
+import { propsType } from '../../public/static/ts-type'
 
 const Posts: NextPage = (props:propsType) => {
   

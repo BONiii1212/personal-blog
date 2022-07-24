@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import styles from './index.module.css'
 import dayjs from 'dayjs'
-import { articleContent } from '../../static/ts-type'
+import { articleContent } from '../../public/static/ts-type'
 import Link from 'next/link'
 import {marked} from 'marked'
 import { MathJax } from 'better-react-mathjax'

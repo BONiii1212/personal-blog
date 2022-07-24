@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from './index.module.css'
-import { navList } from '../../static/constant'
+import { navList } from '../../public/static/constant'
 
 // @ts-ignore
 const Header: NextPage = ({id}) => {

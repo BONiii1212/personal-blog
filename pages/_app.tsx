@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app'
 import { Rem } from '../utils/index'
 import { useEffect } from 'react'
 import {MathJaxContext} from 'better-react-mathjax'
-import {config} from './../static/constant'
+import {config} from '../public/static/constant'
 
 function MyApp({ Component, pageProps }: AppProps) {
   

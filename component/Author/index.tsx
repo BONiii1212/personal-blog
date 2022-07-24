@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import { Avatar } from 'antd'
 import styles from './index.module.css'
-import { findMe, GameInf } from '../../static/constant'
+import { findMe, GameInf } from '../../public/static/constant'
 
 // @ts-ignore
 const Author: NextPage = () => {

@@ -1,4 +1,4 @@
-const ipUrl = 'http://127.0.0.1:7002/default/'
+const ipUrl = 'http://121.5.179.205:7001/default/'
 
 const servicePath = {
     getArticleList : ipUrl + 'articleList',       //获取博客头部分栏

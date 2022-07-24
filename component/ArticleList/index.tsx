@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from './index.module.css'
-import { articleContent } from '../../static/ts-type'
+import { articleContent } from '../../public/static/ts-type'
 import dayjs from 'dayjs'
 
 // @ts-ignore

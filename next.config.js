@@ -8,7 +8,7 @@ if (typeof require !== "undefined") {
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false,
 }
 
 module.exports = Object.assign({},withCSS,nextConfig)

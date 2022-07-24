@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Avatar } from 'antd'
 import styles from './index.module.css'
-import { imgUrl, videos } from '../../static/constant'
+import { imgUrl, videos } from '../../public/static/constant'
 
 // @ts-ignore
 const VlogList: NextPage = () => {
