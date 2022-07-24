@@ -1,6 +1,3 @@
-const articleListData = [{id:0,title:'我获取信息的方法2022版',introduce:'掌握一项技能是需要时间和实践的，降低预期，慢即是快。这篇文章我想讲讲我——作为一个普通人——学习编程的经验，主要是三次“开窍”的心路历程。', addTime: 'Mon Apr 11 2022', tag: '前端学习'},
-{id:1,title:'我获取信息的方法2022版',introduce:'掌握一项技能是需要时间和实践的，降低预期，慢即是快。这篇文章我想讲讲我——作为一个普通人——学习编程的经验，主要是三次“开窍”的心路历程。', addTime: 'Mon Apr 11 2022', tag: '前端学习'}]
-
 const findMe = [{id:0,name:'GitHub',url:'https://github.com/BONiii1212'},
 {id:1,name:'Bilibili',url:'https://space.bilibili.com/11089253'},
 {id:2,name:'Twitter',url:'https://twitter.com/BNiii1212'},
@@ -23,11 +20,24 @@ const imgUrl = 'https://blog-1305899292.cos.ap-shanghai.myqcloud.com/BONiii/8E9A
 const videos = [{id:0,title:'仿杀戮尖塔地图的宝可梦DBG卡牌战棋游戏',url:'https://www.bilibili.com/video/BV1fN4y1K7oF?spm_id_from=333.999.0.0&vd_source=46c07550084160473fd11f6ffb8ba748'},
 {id:1,title:'当你给小动物送墓碑时会发生什么？',url:'https://www.bilibili.com/video/BV1WQ4y1K7iH?spm_id_from=333.999.0.0&vd_source=46c07550084160473fd11f6ffb8ba748'}]
 
+const config = {
+    loader: { load: ["[tex]/html"] },
+    tex: {
+      packages: { "[+]": ["html"] },
+      inlineMath: [
+        ["$", "$"],
+      ],
+      displayMath: [
+        ["$$", "$$"],
+      ]
+    }
+};
+
 export {
-    articleListData,
     findMe,
     GameInf,
     navList,
     imgUrl,
-    videos
+    videos,
+    config
 }

@@ -9,20 +9,20 @@ import Article from '../../component/Article'
 const PostsById: NextPage = (props : any) => {
     return (
         <div>
-            <title>漏杨波的个人博客</title>
-            <Row gutter={24} justify='start'>
-                <Col xs={0} sm={0} md={0} lg={0} xl={0} xxl={6}>
-                </Col>
-                <Col className='main' xs={24} sm={24} md={24} lg={24} xl={16} xxl={12}>
-                {/* @ts-ignore */}
-                <Header id={-1}/>
-                {/* @ts-ignore */}
-                <Article article={props.article} isMultiplexing={false}/>
-                </Col>
-                <Col className='right' xs={0} sm={0} md={0} lg={0} xl={8} xxl={6}>
-                <Author/>
-                </Col>
-            </Row>
+            <title>{props.article.title}</title>
+                <Row gutter={24} justify='start'>
+                    <Col xs={0} sm={0} md={0} lg={0} xl={0} xxl={6}>
+                    </Col>
+                    <Col className='main' xs={24} sm={24} md={24} lg={24} xl={16} xxl={12}>
+                    {/* @ts-ignore */}
+                    <Header id={-1}/>
+                    {/* @ts-ignore */}
+                    <Article article={props.article} isMultiplexing={false}/>
+                    </Col>
+                    <Col className='right' xs={0} sm={0} md={0} lg={0} xl={8} xxl={6}>
+                    <Author/>
+                    </Col>
+                </Row>
         </div>
     )
 }

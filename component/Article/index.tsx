@@ -4,6 +4,7 @@ import dayjs from 'dayjs'
 import { articleContent } from '../../static/ts-type'
 import Link from 'next/link'
 import {marked} from 'marked'
+import { MathJax } from 'better-react-mathjax'
 
 // @ts-ignore
 const Article: NextPage = (props:{article: articleContent, isMultiplexing: boolean}) => {
@@ -36,8 +37,10 @@ const Article: NextPage = (props:{article: articleContent, isMultiplexing: boole
                     <a className={styles.tag}>{article.typeName}</a>
                 </div>
             </div>}
-            <div className={styles.content} dangerouslySetInnerHTML={{__html:marked(article.article_content || '')}}>
-            </div>
+            <MathJax inline hideUntilTypeset={"first"} dynamic>
+                <div className={styles.content} dangerouslySetInnerHTML={{__html:marked(article.article_content || '')}}></div>
+            </MathJax>
+            
         </article>)
 }
 
