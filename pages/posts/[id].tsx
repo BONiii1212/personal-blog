@@ -27,17 +27,17 @@ const PostsById: NextPage = (props : any) => {
     )
 }
 
-export async function getStaticPaths(){
-    const res = await http(servicePath.getArticleList)
-    const repos = res.data
-    // @ts-ignore
-    const paths = repos.map(repo  => `/posts/${repo.id}`)
-    return {paths, fallback:false}
-}
+// export async function getStaticPaths(){
+//     const res = await http(servicePath.getArticleList)
+//     const repos = res.data
+//     // @ts-ignore
+//     const paths = repos.map(repo  => `/posts/${repo.id}`)
+//     return {paths, fallback:false}
+// }
 
 // @ts-ignore
-export async function getStaticProps({params}) {
-    const id = params.id
+export async function getServerSideProps(content) {
+    const id = content.params.id
     const res = await http(servicePath.getArticleById + id)
     return {
       props: {article: res}

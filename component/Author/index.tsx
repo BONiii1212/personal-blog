@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Avatar } from 'antd'
 import styles from './index.module.css'
 import { findMe, GameInf } from '../../public/static/constant'
+import servicePath from '../../config/appUrl'
+
 
 // @ts-ignore
 const Author: NextPage = () => {
@@ -11,8 +13,8 @@ const Author: NextPage = () => {
         <div className={styles.widget}>
             <div className={styles.avatar}><Avatar size={100} src="https://avatars.githubusercontent.com/u/62984113?s=400&u=83b7b6434419620c6f85520a96092fb5a78d1058&v=4"/></div>
             <p>大家好，我是<Link href={'/'}><a>漏杨波</a></Link>，是一名前端程序员，爱好是游戏、音乐以及前端相关的一切。</p>
-            <a href='' className={styles.btn}>点击订阅</a>
-            <p>欢迎你用<Link href={'/'}><a>RSS</a></Link>来订阅我的博客。</p>
+            <a href={servicePath.getRss} className={styles.btn}>点击订阅</a>
+            <p>欢迎你用<Link href={servicePath.getRss}><a>RSS</a></Link>来订阅我的博客。</p>
             <h4>找到我</h4>
             <ul>
                 {findMe.map(item=>{

@@ -13,9 +13,9 @@ const VlogList: NextPage = () => {
             <div className={styles.content}>
                 <div className={styles.pic}>
                     <div className={styles.author}>
-                        <Avatar size={100} src="https://avatars.githubusercontent.com/u/62984113?s=400&u=83b7b6434419620c6f85520a96092fb5a78d1058&v=4"/>
+                        <img src="https://avatars.githubusercontent.com/u/62984113?s=400&u=83b7b6434419620c6f85520a96092fb5a78d1058&v=4" alt='author-header'/>
                     </div>
-                    <img className={styles.bg} src={imgUrl}/>
+                    <img className={styles.bg} src={imgUrl} alt='background-image'/>
                 </div>
                 <p>
                     这里会以视频的形式分享一些生活中的趣事。<a href='https://space.bilibili.com/11089253'>Bilibili</a>

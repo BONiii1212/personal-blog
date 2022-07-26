@@ -24,9 +24,21 @@
 }
 .author {
     position: absolute;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    overflow: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) ;
+}
+.author img {
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    vertical-align: middle;
 }
 .content p {
     margin: 1.25rem 0;

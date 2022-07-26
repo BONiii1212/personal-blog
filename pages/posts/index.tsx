@@ -29,7 +29,7 @@ const Posts: NextPage = (props:propsType) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await http(servicePath.getArticleList)
   // @ts-ignore
   const clear_data = res.data.filter(item=>item.id!==0 && item.id!==1)

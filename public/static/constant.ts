@@ -1,3 +1,5 @@
+import servicePath from "../../config/appUrl"
+
 const findMe = [{id:0,name:'GitHub',url:'https://github.com/BONiii1212'},
 {id:1,name:'Bilibili',url:'https://space.bilibili.com/11089253'},
 {id:2,name:'Twitter',url:'https://twitter.com/BNiii1212'},
@@ -13,7 +15,7 @@ const navList = [{id:0, tag:'博客', href:'/posts'},
 {id:1, tag:'视频', href:'/vlog'}, 
 {id:2, tag:'推荐', href:'/recommend'}, 
 {id:3, tag:'关于', href:'/'}, 
-{id:4, tag:'RSS', href:'/'}]
+{id:4, tag:'RSS', href:servicePath.getRss}]
 
 const imgUrl = 'https://blog-1305899292.cos.ap-shanghai.myqcloud.com/BONiii/8E9A4374-E935-44B4-932E-39B33E1103C2.JPG'
 

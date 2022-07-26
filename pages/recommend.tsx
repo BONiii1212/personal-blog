@@ -27,7 +27,7 @@ const Recommend: NextPage = (props : any) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await http(servicePath.getArticleById + 0)
   return {
     props: {article: res}

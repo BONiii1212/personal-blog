@@ -27,7 +27,7 @@ const Home: NextPage = (props : any) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await http(servicePath.getArticleById + 1)
   return {
     props: {article: res}
